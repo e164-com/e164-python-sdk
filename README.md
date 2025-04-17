@@ -5,7 +5,7 @@ A Python library for handling E.164 formatted phone numbers. This library allows
 ## Installation
 
 ```bash
-pip install e164-python
+pip install e164-python-sdk
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ pip install e164-python
 Here's a quickstart guide to using the library:
 
 ```python
-from e164_python.e164 import E164
+from e164_python_sdk.e164 import E164
 
 # Initialize the E164 client
 client = E164()
