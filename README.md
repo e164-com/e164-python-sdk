@@ -1,4 +1,4 @@
-# e164-python
+# E164 Python SDK
 
 A Python library for handling E.164 formatted phone numbers. This library allows you to validate and retrieve metadata about phone numbers using the e164.com API.
 
