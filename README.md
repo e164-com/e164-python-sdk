@@ -13,17 +13,34 @@ pip install e164-python-sdk
 Here's a quickstart guide to using the library:
 
 ```python
-from e164_python_sdk.e164 import E164
+#!/usr/bin/env python3
+from e164_python_sdk import E164
 
-# Initialize the E164 client
-client = E164()
+def main():
+    try:
+        e164_instance = E164()
 
-# Lookup a phone number
-try:
-    response = client.lookup("+441133910781")
-    print(response.to_dict())  # Print the response as a dictionary
-except ValueError as e:
-    print(f"Error: {e}")
+        response = e164_instance.lookup("441133910781")
+
+        print(f"{response.prefix}")
+        print(f"{response.calling_code}")
+        print(f"{response.iso3}")
+        print(f"{response.tadig}")
+        print(f"{response.mccmnc}")
+        print(f"{response.type}")
+        print(f"{response.location}")
+        print(f"{response.operator_brand}")
+        print(f"{response.operator_company}")
+        print(f"{response.total_length_min}")
+        print(f"{response.total_length_max}")
+        print(f"{response.weight}")
+        print(f"{response.source}")
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## Features

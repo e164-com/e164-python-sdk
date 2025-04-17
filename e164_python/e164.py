@@ -27,6 +27,9 @@ class E164:
             
             if not data:
                 raise ValueError("Invalid phone number")
+            
+            if isinstance(data, list) and data:
+                data = data[0] 
 
             return Response.from_dict(data)
         except Exception as e:

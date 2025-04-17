@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="e164-python-sdk",  # Ensure this name is unique on PyPI
-    version="0.1.0",
+    version="0.1.3",
     description="A Python SDK package for accessing the e164.com phone number validation API.",
     long_description=long_description,
     long_description_content_type="text/markdown",
