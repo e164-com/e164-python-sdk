@@ -14,7 +14,7 @@ Here's a quickstart guide to using the library:
 
 ```python
 #!/usr/bin/env python3
-from e164_python_sdk import E164
+from e164_python import E164
 
 def main():
     try:
